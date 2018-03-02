@@ -53,8 +53,6 @@ class Penyakit extends CI_Controller
 		'id_penyakit' => $row->id_penyakit,
 		'kd_penyakit' => $row->kd_penyakit,
 		'nm_penyakit' => $row->nm_penyakit,
-		'definisi' => $row->definisi,
-		'solusi' => $row->solusi,
 		'foto' => $row->foto,
 	    );
             $this->template->load('template','penyakit/tbl_penyakit_read', $data);
@@ -72,8 +70,6 @@ class Penyakit extends CI_Controller
 	    'id_penyakit' => set_value('id_penyakit'),
 	    'kd_penyakit' => set_value('kd_penyakit'),
 	    'nm_penyakit' => set_value('nm_penyakit'),
-	    'definisi' => set_value('definisi'),
-	    'solusi' => set_value('solusi'),
 	    'foto' => set_value('foto'),
 	);
         $this->template->load('template','penyakit/tbl_penyakit_form', $data);
@@ -89,8 +85,6 @@ class Penyakit extends CI_Controller
             $data = array(
 		'kd_penyakit' => $this->input->post('kd_penyakit',TRUE),
 		'nm_penyakit' => $this->input->post('nm_penyakit',TRUE),
-		'definisi' => $this->input->post('definisi',TRUE),
-		'solusi' => $this->input->post('solusi',TRUE),
 		'foto' => $this->input->post('foto',TRUE),
 	    );
 
@@ -111,8 +105,6 @@ class Penyakit extends CI_Controller
 		'id_penyakit' => set_value('id_penyakit', $row->id_penyakit),
 		'kd_penyakit' => set_value('kd_penyakit', $row->kd_penyakit),
 		'nm_penyakit' => set_value('nm_penyakit', $row->nm_penyakit),
-		'definisi' => set_value('definisi', $row->definisi),
-		'solusi' => set_value('solusi', $row->solusi),
 		'foto' => set_value('foto', $row->foto),
 	    );
             $this->template->load('template','penyakit/tbl_penyakit_form', $data);
@@ -132,8 +124,6 @@ class Penyakit extends CI_Controller
             $data = array(
 		'kd_penyakit' => $this->input->post('kd_penyakit',TRUE),
 		'nm_penyakit' => $this->input->post('nm_penyakit',TRUE),
-		'definisi' => $this->input->post('definisi',TRUE),
-		'solusi' => $this->input->post('solusi',TRUE),
 		'foto' => $this->input->post('foto',TRUE),
 	    );
 
@@ -161,8 +151,6 @@ class Penyakit extends CI_Controller
     {
 	$this->form_validation->set_rules('kd_penyakit', 'kd penyakit', 'trim|required');
 	$this->form_validation->set_rules('nm_penyakit', 'nm penyakit', 'trim|required');
-	$this->form_validation->set_rules('definisi', 'definisi', 'trim|required');
-	$this->form_validation->set_rules('solusi', 'solusi', 'trim|required');
 	$this->form_validation->set_rules('foto', 'foto', 'trim|required');
 
 	$this->form_validation->set_rules('id_penyakit', 'id_penyakit', 'trim');

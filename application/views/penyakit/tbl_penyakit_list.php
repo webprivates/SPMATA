@@ -50,10 +50,8 @@
         <table class="table table-bordered" style="margin-bottom: 10px">
             <tr>
                 <th>No</th>
-		<th>Kd Penyakit</th>
-		<th>Nm Penyakit</th>
-		<th>Definisi</th>
-		<th>Solusi</th>
+		<th>Kode Penyakit</th>
+		<th>Nama Penyakit</th>
 		<th>Foto</th>
 		<th>Action</th>
             </tr><?php
@@ -64,8 +62,6 @@
 			<td width="10px"><?php echo ++$start ?></td>
 			<td><?php echo $penyakit->kd_penyakit ?></td>
 			<td><?php echo $penyakit->nm_penyakit ?></td>
-			<td><?php echo $penyakit->definisi ?></td>
-			<td><?php echo $penyakit->solusi ?></td>
 			<td><?php echo $penyakit->foto ?></td>
 			<td style="text-align:center" width="200px">
 				<?php 

@@ -34,8 +34,6 @@ class Penyakit_model extends CI_Model
         $this->db->like('id_penyakit', $q);
 	$this->db->or_like('kd_penyakit', $q);
 	$this->db->or_like('nm_penyakit', $q);
-	$this->db->or_like('definisi', $q);
-	$this->db->or_like('solusi', $q);
 	$this->db->or_like('foto', $q);
 	$this->db->from($this->table);
         return $this->db->count_all_results();
@@ -47,8 +45,6 @@ class Penyakit_model extends CI_Model
         $this->db->like('id_penyakit', $q);
 	$this->db->or_like('kd_penyakit', $q);
 	$this->db->or_like('nm_penyakit', $q);
-	$this->db->or_like('definisi', $q);
-	$this->db->or_like('solusi', $q);
 	$this->db->or_like('foto', $q);
 	$this->db->limit($limit, $start);
         return $this->db->get($this->table)->result();
