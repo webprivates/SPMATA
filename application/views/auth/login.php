@@ -30,7 +30,7 @@
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
-                <a href="<?php echo base_url(); ?>/adminlte/index2.html"><b>Garuda CRUD</b> Generator</a>
+                <a href="#"><b>SP</b>MATA</a>
             </div>
             <!-- /.login-logo -->
             <div class="login-box-body">
@@ -63,25 +63,6 @@
                     </div>
                 </div>
                 <!-- /.col -->
-
-
-                <!-- /.col -->
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-xs-12">
-                        <div class="callout callout-info">
-                            <h4>Level Super Admin</h4>
-
-                            <p><b>Email</b> : nuris.akbar@gmail.com</p>
-                            <p><b>Password</b> : password</p>
-                            <hr>
-                            <h4>Level Admin</h4>
-
-                            <p><b>Email</b> : hafid@gmail.com</p>
-                            <p><b>Password</b> : password</p>
-                        </div>
-                    </div>
-
-                </div>
                 </form>
 
 
