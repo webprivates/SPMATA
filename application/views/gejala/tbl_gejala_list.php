@@ -50,8 +50,8 @@
         <table class="table table-bordered" style="margin-bottom: 10px">
             <tr>
                 <th>No</th>
-		<th>Kd Gejala</th>
-		<th>Nm Gejala</th>
+		<th>Kode Gejala</th>
+		<th>Nama Gejala</th>
 		<th>Action</th>
             </tr><?php
             foreach ($gejala_data as $gejala)

@@ -85,7 +85,8 @@ class Penyakit extends CI_Controller
             $data = array(
 		'kd_penyakit' => $this->input->post('kd_penyakit',TRUE),
 		'nm_penyakit' => $this->input->post('nm_penyakit',TRUE),
-		'foto' => $this->input->post('foto',TRUE),
+        'foto' => $this->input->post('foto',TRUE),
+		//'foto' => $foto['file_name'],
 	    );
 
             $this->Penyakit_model->insert($data);

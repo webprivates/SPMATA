@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 02, 2018 at 11:06 AM
+-- Generation Time: Mar 02, 2018 at 01:38 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -33,6 +33,17 @@ CREATE TABLE `tbl_gejala` (
   `kd_gejala` varchar(40) NOT NULL,
   `nm_gejala` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_gejala`
+--
+
+INSERT INTO `tbl_gejala` (`id_gejala`, `kd_gejala`, `nm_gejala`) VALUES
+(1, 'G001', 'Katarak'),
+(2, 'G002', 'Konjongtivitis'),
+(3, 'G003', 'NSJJSAJ'),
+(4, 'G004', 'Skleritis'),
+(5, 'G005', 'Hordeolum');
 
 -- --------------------------------------------------------
 
@@ -190,7 +201,8 @@ CREATE TABLE `tbl_user` (
 INSERT INTO `tbl_user` (`id_users`, `full_name`, `email`, `password`, `images`, `id_user_level`, `is_aktif`) VALUES
 (1, 'Nuris Akbar M.Kom', 'nuris.akbar@gmail.com', '$2y$04$Wbyfv4xwihb..POfhxY5Y.jHOJqEFIG3dLfBYwAmnOACpH0EWCCdq', 'atomix_user31.png', 1, 'y'),
 (3, 'Muhammad hafidz Muzaki', 'hafid@gmail.com', '$2y$04$Wbyfv4xwihb..POfhxY5Y.jHOJqEFIG3dLfBYwAmnOACpH0EWCCdq', '7.png', 2, 'y'),
-(4, 'Hasriani', 'hasrianiani560@gmail.com', '$2y$04$DwSwB0ArLc2bdvv6iIVAyuJ93OtHf98qlZ2CbXlMNotjUhJmMLsrG', 'IMG_20170918_181045.jpg', 1, 'y');
+(4, 'Hasriani', 'hasrianiani560@gmail.com', '$2y$04$DwSwB0ArLc2bdvv6iIVAyuJ93OtHf98qlZ2CbXlMNotjUhJmMLsrG', 'IMG_20170918_181045.jpg', 1, 'y'),
+(5, 'Hasriani', 'hasriani@gmail.com', '$2y$04$jPLJBr.I7PBOB6zFf5hFZOLgZIysH2rxpE4ElwQu5o2OkUKkcgu7W', 'IMG_20170918_1810451.jpg', 1, 'y');
 
 -- --------------------------------------------------------
 
@@ -280,6 +292,12 @@ ALTER TABLE `tbl_user_level`
 --
 
 --
+-- AUTO_INCREMENT for table `tbl_gejala`
+--
+ALTER TABLE `tbl_gejala`
+  MODIFY `id_gejala` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `tbl_hak_akses`
 --
 ALTER TABLE `tbl_hak_akses`
@@ -325,7 +343,7 @@ ALTER TABLE `tbl_setting`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_user_level`

@@ -12,8 +12,8 @@
     <body>
         <h2 style="margin-top:0px">Tbl_gejala Read</h2>
         <table class="table">
-	    <tr><td>Kd Gejala</td><td><?php echo $kd_gejala; ?></td></tr>
-	    <tr><td>Nm Gejala</td><td><?php echo $nm_gejala; ?></td></tr>
+	    <tr><td>Kode Gejala</td><td><?php echo $kd_gejala; ?></td></tr>
+	    <tr><td>Nama Gejala</td><td><?php echo $nm_gejala; ?></td></tr>
 	    <tr><td></td><td><a href="<?php echo site_url('gejala') ?>" class="btn btn-default">Cancel</a></td></tr>
 	</table>
         </body>
